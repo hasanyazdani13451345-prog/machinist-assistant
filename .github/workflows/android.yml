@@ -36,23 +36,26 @@ jobs:
             gradle --no-daemon assembleDebug assembleRelease
           fi
 
-      - name: Rename APKs
+      - name: Rename APKs (version read from build.gradle.kts)
         run: |
+          VER=$(grep -oP 'versionName\s*=\s*"\K[^"]+' app/build.gradle.kts)
+          echo "APK version: $VER"
           mkdir -p dist
-          cp app/build/outputs/apk/debug/*.apk   dist/MachinistAssistant-v1.0.0-debug.apk
-          cp app/build/outputs/apk/release/*.apk dist/MachinistAssistant-v1.0.0-release.apk
+          cp app/build/outputs/apk/debug/*.apk   dist/MachinistAssistant-v${VER}-debug.apk
+          cp app/build/outputs/apk/release/*.apk dist/MachinistAssistant-v${VER}-release.apk
+          ls -l dist
 
       - name: Upload Debug APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: MachinistAssistant-debug-apk
-          path: dist/MachinistAssistant-v1.0.0-debug.apk
+          path: dist/*debug*.apk
 
       - name: Upload Release APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: MachinistAssistant-release-apk
-          path: dist/MachinistAssistant-v1.0.0-release.apk
+          path: dist/*release*.apk
 
       - name: Create GitHub Release (only when pushing a tag like v1.0.0)
         if: startsWith(github.ref, 'refs/tags/')
