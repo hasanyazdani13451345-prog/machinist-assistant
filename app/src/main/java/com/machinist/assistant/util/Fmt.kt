@@ -25,8 +25,8 @@ object Fmt {
         val sb = StringBuilder(s.length)
         for (c in s) {
             when (c) {
-                in '\u06F0'..'\u06F9' -> sb.append(c - '\u06F0' + '0')   // Persian ۰-۹
-                in '\u0660'..'\u0669' -> sb.append(c - '\u0660' + '0')   // Arabic-Indic ٠-٩
+                in '\u06F0'..'\u06F9' -> sb.append('0' + (c - '\u06F0'))   // Persian ۰-۹
+                in '\u0660'..'\u0669' -> sb.append('0' + (c - '\u0660'))   // Arabic-Indic ٠-٩
                 '\u066B' -> sb.append('.')                               // Arabic decimal sep
                 '\u066C' -> {}                                           // Arabic thousands sep
                 else -> sb.append(c)
