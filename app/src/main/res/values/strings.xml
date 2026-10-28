@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Machinist Assistant</string>
+
+    <!-- Home sections -->
+    <string name="section_calcs">Calculators</string>
+    <string name="section_tools">Tools</string>
+    <string name="section_tables">Reference Tables</string>
+    <string name="section_more">More</string>
+
+    <!-- Home cards -->
+    <string name="nav_turning">Turning</string>
+    <string name="sub_turning">Spindle speed, feed, MRR, power</string>
+    <string name="nav_milling">Milling</string>
+    <string name="sub_milling">Table feed, MRR, cutting time</string>
+    <string name="nav_drilling">Drilling</string>
+    <string name="sub_drilling">RPM, feed and hole time</string>
+    <string name="nav_tapping">Threading and Tapping</string>
+    <string name="sub_tapping">Tap drill size and tapping RPM</string>
+    <string name="nav_converter">Unit Converter</string>
+    <string name="sub_converter">mm/inch, kW/HP, °C/°F and more</string>
+    <string name="nav_weight">Part Weight</string>
+    <string name="sub_weight">Round bar, tube, plate, hex</string>
+    <string name="nav_threads">Metric Threads ISO</string>
+    <string name="sub_threads">M1 to M68, coarse and fine</string>
+    <string name="nav_speeds">Cutting Speeds</string>
+    <string name="sub_speeds">14 materials, HSS and carbide</string>
+    <string name="nav_fits">ISO Fits and Tolerances</string>
+    <string name="sub_fits">H7/g6, H7/k6, H7/p6 up to 250 mm</string>
+    <string name="nav_drills">Drill Chart</string>
+    <string name="sub_drills">Inch and metric drill chart</string>
+    <string name="nav_guide">Formulas Guide</string>
+    <string name="sub_guide">Learn the machining formulas</string>
+
+    <!-- Menu -->
+    <string name="menu_theme">Theme</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_about">About</string>
+    <string name="about_text">Machinist Assistant v1.0.0\n\nOffline calculation and reference helper for industrial machinists: turning, milling, drilling and tapping calculators, unit converter, part weight, metric threads, cutting speeds, ISO fits and drill charts.\n\nSuggested values are workshop guidelines. Always confirm with your machine and tooling datasheets.</string>
+
+    <!-- Common -->
+    <string name="btn_calculate">Calculate</string>
+    <string name="material">Workpiece material</string>
+    <string name="tool_type">Tool type</string>
+    <string name="tool_hss">HSS</string>
+    <string name="tool_carbide">Carbide</string>
+    <string name="err_input">Enter valid numbers</string>
+    <string name="res_rpm">Spindle speed N</string>
+    <string name="res_feed_rate">Feed rate Vf (mm/min)</string>
+    <string name="res_mrr">Material removal rate Q (cm³/min)</string>
+    <string name="res_cut_power">Cutting power Pc (kW)</string>
+    <string name="res_motor_power">Required motor power (kW)</string>
+    <string name="res_time">Machining time</string>
+    <string name="hint_vc_suggest">Suggested Vc: %s m/min</string>
+    <string name="hint_feed_suggest">Suggested feed: %s mm/rev</string>
+
+    <!-- Turning -->
+    <string name="wc_diameter">Workpiece diameter D (mm)</string>
+    <string name="cutting_speed">Cutting speed Vc (m/min)</string>
+    <string name="feed_rev">Feed f (mm/rev)</string>
+    <string name="doc">Depth of cut ap (mm)</string>
+    <string name="length_mach">Machining length L (mm)</string>
+    <string name="eff">Motor efficiency η (%)</string>
+
+    <!-- Milling -->
+    <string name="tool_dia">Cutter diameter Dc (mm)</string>
+    <string name="flutes">Number of teeth Z</string>
+    <string name="feed_tooth">Feed per tooth fz (mm)</string>
+    <string name="ap_axial">Axial depth ap (mm)</string>
+    <string name="ae_radial">Radial width ae (mm)</string>
+    <string name="slot_length">Slot length L (mm)</string>
+    <string name="hint_fz">Typical fz for this material: %s mm</string>
+
+    <!-- Drilling -->
+    <string name="drill_dia">Drill diameter D (mm)</string>
+    <string name="hole_depth">Hole depth L (mm)</string>
+    <string name="note_peck">Deep hole (L greater than 3×D): use peck drilling and retract the chips.</string>
+
+    <!-- Tapping -->
+    <string name="mode_table">From table</string>
+    <string name="mode_manual">Manual</string>
+    <string name="thread_size">Thread size</string>
+    <string name="thread_nominal">Thread nominal diameter D (mm)</string>
+    <string name="thread_pitch">Pitch P (mm)</string>
+    <string name="res_tap_drill">Tap drill size</string>
+    <string name="res_std_drill">Nearest standard drill</string>
+    <string name="res_tap_rpm">Tapping speed N</string>
+    <string name="note_tap">Tapping Vc is reduced to 60 percent of drilling. On CNC use a floating tap holder.</string>
+
+    <!-- Converter -->
+    <string name="unit_category">Category</string>
+    <string name="unit_value">Value</string>
+    <string name="unit_from">From</string>
+    <string name="unit_to">To</string>
+    <string name="cat_length">Length</string>
+    <string name="cat_speed">Cutting speed</string>
+    <string name="cat_feedrev">Feed per revolution</string>
+    <string name="cat_feedmin">Feed rate</string>
+    <string name="cat_power">Power</string>
+    <string name="cat_torque">Torque</string>
+    <string name="cat_mass">Mass</string>
+    <string name="cat_angle">Angle</string>
+    <string name="cat_temp">Temperature</string>
+
+    <!-- Weight -->
+    <string name="shape">Profile shape</string>
+    <string name="shape_round">Round bar</string>
+    <string name="shape_tube">Tube / pipe</string>
+    <string name="shape_plate">Plate / block</string>
+    <string name="shape_hex">Hex bar</string>
+    <string name="param_d">Diameter D (mm)</string>
+    <string name="param_l">Length L (mm)</string>
+    <string name="param_od">Outer diameter OD (mm)</string>
+    <string name="param_t">Wall thickness t (mm)</string>
+    <string name="param_w">Width W (mm)</string>
+    <string name="param_thk">Thickness t (mm)</string>
+    <string name="param_a">Across flats A (mm)</string>
+    <string name="res_volume">Volume (cm³)</string>
+    <string name="res_mass_kg">Mass (kg)</string>
+    <string name="res_mass_g">Mass (g)</string>
+    <string name="density_note">Density: %s g/cm³</string>
+
+    <!-- Threads table -->
+    <string name="tab_coarse">Coarse</string>
+    <string name="tab_fine">Fine</string>
+    <string name="search_hint">Search (e.g. M8)…</string>
+    <string name="col_thread">Thread</string>
+    <string name="col_pitch">Pitch (mm)</string>
+    <string name="col_drill">Tap drill (mm)</string>
+
+    <!-- Speeds table -->
+    <string name="col_material">Material</string>
+    <string name="col_turn_hss">Turn HSS</string>
+    <string name="col_turn_carb">Turn carbide</string>
+    <string name="col_drill_hss">Drill HSS</string>
+    <string name="col_feed">Feed mm/rev</string>
+    <string name="speeds_note">Vc values are in m/min for turning. Reduce 20 to 30 percent for drilling and milling.</string>
+
+    <!-- Fits table -->
+    <string name="fit_range">Nominal diameter range (mm)</string>
+    <string name="col_fit">Fit</string>
+    <string name="col_hole">Hole (µm)</string>
+    <string name="col_shaft">Shaft (µm)</string>
+    <string name="col_type">Type</string>
+    <string name="col_gap">Fit range (µm)</string>
+    <string name="type_clearance">Clearance</string>
+    <string name="type_transition">Transition</string>
+    <string name="type_interference">Interference</string>
+    <string name="fits_note">Tolerances are in micrometers (µm) per ISO 286, hole-basis fits with H7/H8.\nExample 25H7/g6: hole 25 0/+0.021, shaft 25 −0.007/−0.020.</string>
+
+    <!-- Drills table -->
+    <string name="mode_inch">Inch</string>
+    <string name="mode_metric">Metric</string>
+    <string name="col_inch">Inch</string>
+    <string name="col_dec">Decimal inch</string>
+    <string name="col_mm">mm</string>
+
+    <!-- Guide -->
+    <string name="guide_title_intro">Start from the cutting speed table, then adjust by chip color, tool wear and vibration. These formulas are the backbone of every machining calculation in this app.</string>
+    <string-array name="guide_items">
+        <item><![CDATA[<b>1. Cutting speed Vc</b><br/>Vc = π × D × N / 1000<br/><br/>Cutting speed is the surface speed of the cutting edge in m/min. Higher Vc means higher productivity but faster tool wear. Always start from the cutting speed table, then tune by chip color, edge wear, vibration and surface finish. Blue or dark chips on steel usually mean Vc is too high for the insert grade.]]></item>
+        <item><![CDATA[<b>2. Spindle speed N</b><br/>N = (1000 × Vc) / (π × D)<br/><br/>Bigger diameter means lower RPM for the same Vc. Example: Vc = 110 m/min on D = 50 mm gives N ≈ 700 rpm. On a conventional lathe, set the closest lower RPM the gearbox offers.]]></item>
+        <item><![CDATA[<b>3. Feed</b><br/>Turning: Vf = f × N<br/>Milling: Vf = fz × Z × N<br/><br/>Feed is the tool advance per revolution (turning) or per tooth (milling). Too low a feed on stainless steel rubs the edge and work-hardens the surface; too high a feed increases cutting force and risks edge chipping. Roughing typically uses 2 to 3 times the finishing feed.]]></item>
+        <item><![CDATA[<b>4. Material removal rate</b><br/>Turning: Q = Vc × f × ap (cm³/min)<br/>Milling: Q = ap × ae × Vf / 1000 (cm³/min)<br/><br/>Q tells how fast metal is removed and how much power is needed. Keep Q within the available spindle and motor power of the machine.]]></item>
+        <item><![CDATA[<b>5. Cutting power</b><br/>Pc = kc × ap × f × Vc / 60000 (kW)<br/>Motor power = Pc / η<br/><br/>kc is the specific cutting force of the material in N/mm² (see the speeds table data used by the calculators). η is drive efficiency, typically 75 to 85 percent on older machines. If Pc exceeds 80 percent of available motor power, reduce ap or f.]]></item>
+        <item><![CDATA[<b>6. Tap drill size</b><br/>Tap drill = D − P<br/><br/>D is the thread nominal diameter and P is the pitch. Example M8 × 1.25 → 8 − 1.25 = 6.75, use a 6.8 mm drill. In soft material you can go 0.1 mm larger to reduce tapping torque.]]></item>
+        <item><![CDATA[<b>7. Machining time</b><br/>Turning: T = L / (f × N)<br/>Drilling: T = (L + 0.3×D) / (f × N)<br/>Milling: T = (L + lc) / Vf with lc = √(ae × (Dc − ae))<br/><br/>Add approach and overtravel allowances when quoting cycle time. For deep holes (L greater than 3×D) plan peck drilling which increases real time.]]></item>
+        <item><![CDATA[<b>8. Workshop tips</b><br/>• Roughing: large ap, medium f, then finishing pass with small f for surface finish.<br/>• Vibration or chatter: reduce Vc or ap first, then increase feed slightly.<br/>• Use cutting fluid on steels and stainless; dry machining suits cast iron and many carbide inserts.<br/>• Constant chip shape means stable process; long stringy chips mean change feed or use chip breaker geometry.]]></item>
+    </string-array>
+</resources>

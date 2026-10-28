@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".MachinistApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MachinistAssistant">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".calc.TurningActivity"
+            android:exported="false"
+            android:label="@string/nav_turning"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".calc.MillingActivity"
+            android:exported="false"
+            android:label="@string/nav_milling"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".calc.DrillingActivity"
+            android:exported="false"
+            android:label="@string/nav_drilling"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".calc.TappingActivity"
+            android:exported="false"
+            android:label="@string/nav_tapping"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".calc.ConverterActivity"
+            android:exported="false"
+            android:label="@string/nav_converter"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".calc.WeightActivity"
+            android:exported="false"
+            android:label="@string/nav_weight"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".tables.ThreadsActivity"
+            android:exported="false"
+            android:label="@string/nav_threads"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".tables.SpeedsActivity"
+            android:exported="false"
+            android:label="@string/nav_speeds"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".tables.FitsActivity"
+            android:exported="false"
+            android:label="@string/nav_fits"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".tables.DrillsActivity"
+            android:exported="false"
+            android:label="@string/nav_drills"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false"
+            android:label="@string/nav_guide"
+            android:parentActivityName=".MainActivity" />
+    </application>
+</manifest>

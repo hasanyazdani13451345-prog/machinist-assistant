@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">دستیار تراشکار</string>
+
+    <!-- Home sections -->
+    <string name="section_calcs">محاسبات</string>
+    <string name="section_tools">ابزارهای کمکی</string>
+    <string name="section_tables">جداول مرجع</string>
+    <string name="section_more">سایر</string>
+
+    <!-- Home cards -->
+    <string name="nav_turning">تراش (Turning)</string>
+    <string name="sub_turning">دور موتور، فید، برداشت فلز، توان</string>
+    <string name="nav_milling">فرزکاری (Milling)</string>
+    <string name="sub_milling">فید میز، برداشت فلز، زمان برش</string>
+    <string name="nav_drilling">سوراخ‌کاری (Drilling)</string>
+    <string name="sub_drilling">دور، فید و زمان سوراخ</string>
+    <string name="nav_tapping">رزوه و تاپ‌زنی (Tapping)</string>
+    <string name="sub_tapping">مته تراش رزوه و دور تاپ‌زنی</string>
+    <string name="nav_converter">مبدل واحدها</string>
+    <string name="sub_converter">میلی‌متر/اینچ، کیلووات/اسب، °C/°F</string>
+    <string name="nav_weight">وزن قطعه</string>
+    <string name="sub_weight">میل‌گرد، لوله، ورق، شش‌گرد</string>
+    <string name="nav_threads">رزوه متریک ISO</string>
+    <string name="sub_threads">درشت و ریز، از M1 تا M68</string>
+    <string name="nav_speeds">سرعت برش مواد</string>
+    <string name="sub_speeds">۱۴ ماده با HSS و کارباید</string>
+    <string name="nav_fits">تلرانس و انطباق ISO</string>
+    <string name="sub_fits">H7/g6، H7/k6، H7/p6 تا قطر ۲۵۰</string>
+    <string name="nav_drills">جدول مته‌ها</string>
+    <string name="sub_drills">مته‌های اینچی و متریک</string>
+    <string name="nav_guide">راهنمای فرمول‌ها</string>
+    <string name="sub_guide">یادگیری فرمول‌های ماشین‌کاری</string>
+
+    <!-- Menu -->
+    <string name="menu_theme">تم</string>
+    <string name="menu_language">زبان</string>
+    <string name="menu_about">درباره</string>
+    <string name="about_text">دستیار تراشکار نسخه ۱.۰.۰\n\nدستیار آفلاین محاسباتی و اطلاعاتی برای تراشکاران صنایع: ماشین‌حساب‌های تراش، فرز، مته و تاپ‌زنی، مبدل واحدها، وزن قطعه، جداول رزوه متریک، سرعت برش مواد، انطباق‌های ISO و جدول مته‌ها.\n\nمقادیر پیشنهادی، راهنمای کارگاهی هستند. همیشه با کاتالوگ دستگاه و ابزار تطبیق دهید.</string>
+
+    <!-- Common -->
+    <string name="btn_calculate">محاسبه</string>
+    <string name="material">جنس قطعه کار</string>
+    <string name="tool_type">نوع ابزار</string>
+    <string name="tool_hss">HSS (تندبُر)</string>
+    <string name="tool_carbide">کارباید</string>
+    <string name="err_input">اعداد معتبر وارد کنید</string>
+    <string name="res_rpm">دور موتور N</string>
+    <string name="res_feed_rate">سرعت پیشروی Vf (mm/min)</string>
+    <string name="res_mrr">نرخ برداشت فلز Q (cm³/min)</string>
+    <string name="res_cut_power">توان برش Pc (kW)</string>
+    <string name="res_motor_power">توان لازم موتور (kW)</string>
+    <string name="res_time">زمان ماشین‌کاری</string>
+    <string name="hint_vc_suggest">پیشنهاد Vc: %s m/min</string>
+    <string name="hint_feed_suggest">پیشنهاد فید: %s mm/rev</string>
+
+    <!-- Turning -->
+    <string name="wc_diameter">قطر قطعه کار D (mm)</string>
+    <string name="cutting_speed">سرعت برش Vc (m/min)</string>
+    <string name="feed_rev">پیش‌فید f (mm/rev)</string>
+    <string name="doc">عمق برش ap (mm)</string>
+    <string name="length_mach">طول ماشین‌کاری L (mm)</string>
+    <string name="eff">بازده موتور η (%)</string>
+
+    <!-- Milling -->
+    <string name="tool_dia">قطر ابزار Dc (mm)</string>
+    <string name="flutes">تعداد لبه Z</string>
+    <string name="feed_tooth">فید هر لبه fz (mm)</string>
+    <string name="ap_axial">عمق محوری ap (mm)</string>
+    <string name="ae_radial">عرض درگیری ae (mm)</string>
+    <string name="slot_length">طول شیار L (mm)</string>
+    <string name="hint_fz">fz معمول برای این ماده: %s mm</string>
+
+    <!-- Drilling -->
+    <string name="drill_dia">قطر مته D (mm)</string>
+    <string name="hole_depth">عمق سوراخ L (mm)</string>
+    <string name="note_peck">سوراخ عمیق (بیش از ۳ برابر قطر): از مته‌گیری پله‌ای (Peck) استفاده کنید تا براده خارج شود.</string>
+
+    <!-- Tapping -->
+    <string name="mode_table">از جدول</string>
+    <string name="mode_manual">دستی</string>
+    <string name="thread_size">سایز رزوه</string>
+    <string name="thread_nominal">قطر نامی رزوه D (mm)</string>
+    <string name="thread_pitch">گام رزوه P (mm)</string>
+    <string name="res_tap_drill">سایز مته تراش</string>
+    <string name="res_std_drill">نزدیک‌ترین مته استاندارد</string>
+    <string name="res_tap_rpm">دور تاپ‌زنی N</string>
+    <string name="note_tap">سرعت برش تاپ‌زنی ۶۰ درصد مته‌کاری فرض شده است. روی CNC از گیره فنری تاپ استفاده کنید.</string>
+
+    <!-- Converter -->
+    <string name="unit_category">دسته</string>
+    <string name="unit_value">مقدار</string>
+    <string name="unit_from">از</string>
+    <string name="unit_to">به</string>
+    <string name="cat_length">طول</string>
+    <string name="cat_speed">سرعت برش</string>
+    <string name="cat_feedrev">فید هر دور</string>
+    <string name="cat_feedmin">سرعت پیشروی</string>
+    <string name="cat_power">توان</string>
+    <string name="cat_torque">گشتاور</string>
+    <string name="cat_mass">جرم</string>
+    <string name="cat_angle">زاویه</string>
+    <string name="cat_temp">دما</string>
+
+    <!-- Weight -->
+    <string name="shape">شکل مقطع</string>
+    <string name="shape_round">میل‌گرد</string>
+    <string name="shape_tube">لوله</string>
+    <string name="shape_plate">ورق / بلوک</string>
+    <string name="shape_hex">شش‌گرد</string>
+    <string name="param_d">قطر D (mm)</string>
+    <string name="param_l">طول L (mm)</string>
+    <string name="param_od">قطر خارجی OD (mm)</string>
+    <string name="param_t">ضخامت جداره t (mm)</string>
+    <string name="param_w">عرض W (mm)</string>
+    <string name="param_thk">ضخامت t (mm)</string>
+    <string name="param_a">آچارباز A (mm)</string>
+    <string name="res_volume">حجم (cm³)</string>
+    <string name="res_mass_kg">جرم (kg)</string>
+    <string name="res_mass_g">جرم (g)</string>
+    <string name="density_note">چگالی: %s g/cm³</string>
+
+    <!-- Threads table -->
+    <string name="tab_coarse">درشت</string>
+    <string name="tab_fine">ریز</string>
+    <string name="search_hint">جستجو (مثلاً M8)…</string>
+    <string name="col_thread">رزوه</string>
+    <string name="col_pitch">گام (mm)</string>
+    <string name="col_drill">مته تراش (mm)</string>
+
+    <!-- Speeds table -->
+    <string name="col_material">ماده</string>
+    <string name="col_turn_hss">تراش HSS</string>
+    <string name="col_turn_carb">تراش کارباید</string>
+    <string name="col_drill_hss">مته HSS</string>
+    <string name="col_feed">فید mm/rev</string>
+    <string name="speeds_note">مقادیر Vc بر حسب m/min برای تراش است؛ برای مته و فرز ۲۰ تا ۳۰ درصد کمتر در نظر بگیرید.</string>
+
+    <!-- Fits table -->
+    <string name="fit_range">محدوده قطر نامی (mm)</string>
+    <string name="col_fit">انطباق</string>
+    <string name="col_hole">سوراخ (µm)</string>
+    <string name="col_shaft">میله (µm)</string>
+    <string name="col_type">نوع</string>
+    <string name="col_gap">لقی/داخل (µm)</string>
+    <string name="type_clearance">لقی‌دار</string>
+    <string name="type_transition">داخل‌ناودیس</string>
+    <string name="type_interference">داخل</string>
+    <string name="fits_note">تلرانس‌ها بر حسب میکرومتر (µm) طبق ISO 286 و بر پایه سوراخ H7/H8 است.\nمثال 25H7/g6: سوراخ 25 از 0 تا +0.021 و میله از −0.007 تا −0.020.</string>
+
+    <!-- Drills table -->
+    <string name="mode_inch">اینچی</string>
+    <string name="mode_metric">متری</string>
+    <string name="col_inch">اینچ</string>
+    <string name="col_dec">اعشار اینچ</string>
+    <string name="col_mm">mm</string>
+
+    <!-- Guide -->
+    <string name="guide_title_intro">از جدول سرعت برش شروع کنید و بر اساس رنگ براده، سایش لبه و لرزش تنظیم کنید. این فرمول‌ها ستون فقرات همه محاسبات ماشین‌کاری در این اپ هستند.</string>
+    <string-array name="guide_items">
+        <item><![CDATA[<b>۱. سرعت برش Vc</b><br/>Vc = π × D × N / 1000<br/><br/>سرعت برش، سرعت سطحی لبه برش روی قطعه بر حسب m/min است. Vc بالاتر یعنی تولید بیشتر اما سایش سریع‌تر ابزار. همیشه از جدول سرعت برش شروع کنید و بر اساس رنگ براده، سایش لبه، لرزش و جنس پرداخت تنظیم کنید. براده آبی یا تیره در فولاد معمولاً یعنی Vc برای نوع اینسرت زیاد است.]]></item>
+        <item><![CDATA[<b>۲. دور موتور N</b><br/>N = (1000 × Vc) / (π × D)<br/><br/>قطر بزرگ‌تر یعنی دور کمتر برای همان Vc. مثال: Vc = 110 و D = 50 میلی‌متر، دور حدود 700 rpm می‌شود. روی تراش معمولی، نزدیک‌ترین دور کمترِ جعبه‌دنده را تنظیم کنید.]]></item>
+        <item><![CDATA[<b>۳. فید (پیش‌فید)</b><br/>تراش: Vf = f × N<br/>فرز: Vf = fz × Z × N<br/><br/>فید، پیشروی ابزار در هر دور (تراش) یا هر لبه (فرز) است. فید خیلی کم روی استیل باعث سایش لبه و سخت‌کاری سطحی می‌شود؛ فید خیلی زیاد نیروی برش و خطر شکستن لبه را بالا می‌برد. در خشن‌کاری معمولاً ۲ تا ۳ برابر فید پرداخت استفاده می‌شود.]]></item>
+        <item><![CDATA[<b>۴. نرخ برداشت فلز</b><br/>تراش: Q = Vc × f × ap (cm³/min)<br/>فرز: Q = ap × ae × Vf / 1000 (cm³/min)<br/><br/>Q نشان می‌دهد فلز با چه سرعتی برداشته می‌شود و چه توانی لازم است. Q را در محدوده توان اسپیندل و موتور دستگاه نگه دارید.]]></item>
+        <item><![CDATA[<b>۵. توان برش</b><br/>Pc = kc × ap × f × Vc / 60000 (kW)<br/>توان موتور = Pc / η<br/><br/>kc مقاومت مخصوص برش ماده بر حسب N/mm² است (همان داده‌ای که ماشین‌حساب‌های اپ استفاده می‌کنند). η بازده انتقال قدرت است و معمولاً روی دستگاه‌های قدیمی ۷۵ تا ۸۵ درصد است. اگر Pc از ۸۰ درصد توان موتور بیشتر شد، ap یا f را کم کنید.]]></item>
+        <item><![CDATA[<b>۶. مته تراش رزوه</b><br/>مته = D − P<br/><br/>D قطر نامی رزوه و P گام رزوه است. مثال M8×1.25 → 8 − 1.25 = 6.75، مته 6.8 استفاده کنید. در ماده نرم می‌توانید ۰.۱ میلی‌متر بزرگ‌تر بروید تا گشتاور تاپ‌زنی کم شود.]]></item>
+        <item><![CDATA[<b>۷. زمان ماشین‌کاری</b><br/>تراش: T = L / (f × N)<br/>مته: T = (L + 0.3×D) / (f × N)<br/>فرز: T = (L + lc) / Vf با lc = √(ae × (Dc − ae))<br/><br/>برای تخمین زمان چرخه، طول ورود و خروج ابزار را هم اضافه کنید. برای سوراخ‌های عمیق (بیش از ۳ برابر قطر) مته‌گیری پله‌ای زمان واقعی را بیشتر می‌کند.]]></item>
+        <item><![CDATA[<b>۸. نکات کارگاهی</b><br/>• خشن‌کاری: ap بزرگ و f متوسط، سپس پاس پرداخت با f کم.<br/>• لرزش (Chatter): اول Vc یا ap را کم کنید، بعد کمی فید را زیاد کنید.<br/>• روی فولاد و استیل از خنک‌کاری استفاده کنید؛ چدن و بسیاری از اینسرت‌های کارباید خشک مناسب‌ترند.<br/>• براده یکنواخت یعنی فرآیند پایدار؛ براده بلند و رشته‌ای یعنی فید یا شکست‌براده را عوض کنید.]]></item>
+    </string-array>
+</resources>
