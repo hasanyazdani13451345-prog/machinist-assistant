@@ -78,7 +78,8 @@ class TappingActivity : AppCompatActivity() {
         val vcTap = material.vcDrillHss * 0.6
         val n = 1000.0 * vcTap / (PI * nominal)
 
-        val digits = if (drill * 10.0 % 10.0 == 0.0) 1 else 2
+        // 1 decimal when the drill is a multiple of 0.1 (e.g. 6.8), else 2 (e.g. 5.25)
+        val digits = if (Math.abs(drill * 10.0 - Math.round(drill * 10.0)) < 1e-9) 1 else 2
         b.cardResult.visibility = View.VISIBLE
         b.tvDrill.text = Fmt.n(drill, digits)
         b.tvStdDrill.text = Fmt.n(DrillsData.nearestStandard(drill), 1) + " mm"

@@ -40,7 +40,7 @@ object FitsData {
         val minGap = 0 - shaftUpper      // smallest hole minus biggest shaft
         val maxGap = itHole - shaftLower // biggest hole minus smallest shaft
         val type = when {
-            maxGap < 0 -> typeLabels.third
+            maxGap <= 0 -> typeLabels.third   // no clearance possible (incl. line-to-line)
             minGap < 0 -> typeLabels.second
             else -> typeLabels.first
         }
