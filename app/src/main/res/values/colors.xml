@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background">#F3F7F4</color>
+    <color name="background">#F6FBF7</color>
     <color name="surface">#FFFFFF</color>
-    <color name="on_surface">#17251D</color>
-    <color name="surface_variant">#E7EFEA</color>
-    <color name="on_surface_variant">#44554B</color>
-    <color name="primary">#0E7C4A</color>
+    <color name="on_surface">#1B2B22</color>
+    <color name="surface_variant">#ECF6F0</color>
+    <color name="on_surface_variant">#4C6154</color>
+    <color name="primary">#0FA469</color>
     <color name="on_primary">#FFFFFF</color>
-    <color name="primary_container">#D2EFDF</color>
-    <color name="on_primary_container">#00301C</color>
-    <color name="secondary">#2D6A4F</color>
-    <color name="outline">#7E9488</color>
-    <color name="card_icon_bg">#DEF0E6</color>
-    <color name="ic_launcher_background">#0E7C4A</color>
+    <color name="primary_container">#D6F5E4</color>
+    <color name="on_primary_container">#043620</color>
+    <color name="secondary">#3D9B72</color>
+    <color name="outline">#93A89B</color>
+    <color name="card_icon_bg">#E2F5EA</color>
+    <color name="ic_launcher_background">#0FA469</color>
 </resources>
